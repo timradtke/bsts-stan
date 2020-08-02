@@ -68,7 +68,7 @@ llt_model <- stan_model("local_linear_trend.stan",
                         model_name = "local_linear_trend")
 llt_fit <- sampling(object = llt_model, 
                     data = list(T = T, y = y),
-                    chains = 4,
+                    chains = 10,
                     iter = 4000,
                     seed = 357,
                     verbose = TRUE,
